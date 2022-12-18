@@ -40,9 +40,10 @@ router.put(
   '/update/:id',
   body('title').optional(),
   body('body').optional(),
-  body('status').isIn(['IN_PROGRESS', 'LIVE', 'DEPRECATED', 'ARCHIVED']),
+  body('status')
+    .isIn(['IN_PROGRESS', 'LIVE', 'DEPRECATED', 'ARCHIVED'])
+    .optional(),
   body('version').optional(),
-  body('asset').optional(),
   update,
 )
 router.post(
