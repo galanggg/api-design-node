@@ -1,4 +1,3 @@
-import { UPDATE_STATUS } from '@prisma/client'
 import { Request, Response } from 'express'
 import prisma from '../db'
 
