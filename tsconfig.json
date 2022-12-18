@@ -6,7 +6,8 @@
       "strict": false,
       "lib": ["esnext"],
       "esModuleInterop": true,
-      "declaration": true
+      "declaration": true,
+      "typeRoots" : ["./src/types", "./node_modules/@types"]
     },
     "include": ["src/**/*.ts"]
   }
